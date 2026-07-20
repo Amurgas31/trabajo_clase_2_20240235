@@ -14,6 +14,7 @@ const usePokemonData = () => {
     // podemos utilizar cualquiera de estas urls para obtener la imagen del pokemon, pero en este caso utilizaremos la url de la imagen oficial del pokemon
     // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png
     // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+    
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`;
   };
  

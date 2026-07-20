@@ -10,7 +10,7 @@ import CustomButton from "../components/CustomButton";
 import usePokemonData from "../hooks/usePokemonData";
  
 const PokemonScreen = () => {
-  // utilizamos el hook usePokemonData para obtener los datos de los Pokémon
+  // utisemana2lizamos el hook usePokemonData para obtener los datos de los Pokémon
   // y el estado de carga de los datos para mostrar un indicador de carga mientras se obtienen los datos
   const { pokemonData, loading, loadMorePokemon } = usePokemonData();
  
