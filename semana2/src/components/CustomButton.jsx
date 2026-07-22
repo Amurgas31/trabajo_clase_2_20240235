@@ -1,6 +1,7 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
- 
+import { TouchableOpacity, Text } from "react-native";
+import { styles } from "../styles/pokemonStyle";
+
 const CustomButton = ({ onPress, title }) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
@@ -8,20 +9,5 @@ const CustomButton = ({ onPress, title }) => {
     </TouchableOpacity>
   );
 };
+
 export default CustomButton;
- 
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: "#FFCB05",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    marginTop: 20,
-  },
-  buttonText: {
-    color: "#3B4CCA",
-    fontSize: 16,
-    fontWeight: "bold",
-    textAlign: "center",
-  },
-});

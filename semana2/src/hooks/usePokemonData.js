@@ -4,7 +4,7 @@ const usePokemonData = () => {
  
   const [pokemonData, setPokemonData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [cantidadPokemon, setCantidadPokemon] = useState(5); // Estado para controlar la cantidad de Pokémon a cargar
+  const [cantidadPokemon, setCantidadPokemon] = useState(151); // Estado para controlar la cantidad de Pokémon a cargar
  
   //funcion para obtener la url de la imagen del pokemon a partir de su url que nos da la API
   const getPokemonImage = (pokemonUrl) => {
@@ -82,7 +82,7 @@ const usePokemonData = () => {
  
   const loadMorePokemon = () => {
     setLoading(true); // Establecemos el estado de carga en true mientras obtenemos los datos
-    setCantidadPokemon((prevCantidad) => prevCantidad + 5);
+    setCantidadPokemon((prevCantidad) => prevCantidad + 20);
   };
  
   useEffect(() => {
